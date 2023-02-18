@@ -1,8 +1,13 @@
 :root {
-    --blue: #1c557f;
-    --yellow: #Bab27b;
+    --blue: rgb(66, 129, 164);
+    --yellow: #Ffffff;
+    --orange: rgb(240, 168, 104);
     --grey: grey;
     --white: aliceblue;
+    --green: rgb(9, 163, 107);
+    --brownGrey: #574F2A;
+    --pinkPurple: #6B4E71;
+    --darkBlue: #1C3144;
 }
 
 body {
@@ -13,9 +18,9 @@ body {
     display: flex;
     width: 100%;
     height: 100%;
-    gap: 50px;
+    gap: 150px;
     align-items: center;
-    padding-right: 90px;
+    padding-right: 175px;
     padding-left: 90px;
     margin: 0%;
 }
@@ -29,14 +34,14 @@ nav {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: var(--grey);
+    background-color: var(--darkBlue);
     position: fixed;
     z-index: 3;
     
 }
 
 .navigation li{
-    flex: 1 1 auto;
+    flex: 0 1 auto;
     list-style-type: none;
     width: auto;
     height: auto;
@@ -102,6 +107,7 @@ nav {
     transform-origin: top left;
     transform: skewY(5deg);
     top: 85px;
+    box-shadow: 15px 15px lightblue;
 }
 
 .tips {
@@ -125,11 +131,12 @@ nav {
     position: relative;
     width: 100%;
     height: 250px;
-    background-color: var(--blue);
+    background-color: var(--orange);
     top: 32px;
     z-index: 2;
     transform-origin: top right;
     transform: skewY(-15deg);
+    box-shadow: 15px 15px lightblue;
 }
 
 .third-divider {
@@ -137,11 +144,12 @@ nav {
     position: relative;
     width: 100%;
     height: 250px;
-    background-color: var(--blue);
+    background-color: var(--green);
     top: 200px;
     z-index: 2;
     transform-origin: top left;
     transform: skewY(10deg);
+    box-shadow: 15px 15px lightblue;
 }
 
 .resources {
@@ -165,7 +173,7 @@ footer {
     grid-area: footer;
     width: 100%;
     height: auto;
-    top: 400px;
+    top: 412px;
     background-color: var(--grey);
 }
 
