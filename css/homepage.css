@@ -1,16 +1,23 @@
 :root {
-    --blue: rgb(66, 129, 164);
+    --blue: #5CA4A9;
     --back-grey: #B0ab92;
-    --orange: rgb(240, 168, 104);
+    --orange: #E9B44C;
     --grey: grey;
     --white: aliceblue;
-    --green: rgb(9, 163, 107);
+    --green: #43C59E;
     --brownGrey: #574F2A;
     --pinkPurple: #6B4E71;
     --darkBlue: #1C3144;
-    --light-orange: #Ffd788;
-    --red: #Fc6868;
+    --light-orange: #FFCF6F;
+    --red: #FF7E6B;
+    --light-red: #FF9A8A;
     --yellow: #Faea7d;
+    --light-blue: #15B0B8;
+    --weird-green: #5C9072;
+    --light-green: #7BF0CD;
+    --light-purple: #FF9FE5;
+    --vanilla: #E4D6A7;
+    --purple: #B388EB;
 }
 
 a:link {
@@ -31,7 +38,7 @@ a:active {
 }
 
 body {
-    background-color: var(--yellow);
+    background-color: var(--vanilla);
     width: 100%;
     height: 100%;
 }
@@ -58,7 +65,7 @@ nav {
     bottom: 0;
     margin: 0;
     padding: 0;
-    background-color: darkcyan;
+    background-color: var(--blue);
     position: fixed;
     z-index: 20;    
 }
@@ -126,7 +133,7 @@ main {
     position: relative;
     grid-area: password-generator;
     display: flex;
-    background-color: var(--green);
+    background-color: var(--red);
     z-index: -10;
     justify-content: flex-start;
 }
@@ -190,16 +197,16 @@ main {
     position: relative;
     width: 100%;
     height: 250px;
-    background-color: var(--green);
+    background-color: var(--red);
     z-index: 2;
     transform-origin: top left;
     transform: skewY(5deg);
-    box-shadow: 15px 15px lightgreen;
+    box-shadow: 15px 15px var(--light-red);
 }
 
 .blue-back {
     position: absolute;
-    background-color: var(--blue);
+    background-color: var(--green);
     top: 500px;
     height: 460px;
     width: 100%;
@@ -215,7 +222,7 @@ main {
     grid-area: tips;
     display: flex;
     justify-content: flex-end;
-    background-color: var(--blue);
+    background-color: var(--green);
     z-index: 1;
     top: -150px;
 }
@@ -236,12 +243,12 @@ main {
     position: relative;
     width: 100%;
     height: 250px;
-    background-color: var(--blue);
+    background-color: var(--green);
     top: -475px;
     z-index: 2;
     transform-origin: top right;
     transform: skewY(-15deg);
-    box-shadow: 15px 15px lightblue;
+    box-shadow: 15px 15px var(--light-green);
 }
 
 .third-divider {
@@ -297,7 +304,7 @@ footer {
     width: 100%;
     height: 150px;
     top: 1110px;
-    background-color: darkcyan;
+    background-color: var(--blue);
     color: var(--white);
     z-index: 10;
 }
